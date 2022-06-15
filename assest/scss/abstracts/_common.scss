@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+p{
+    font-size: 15px;
+    color: rgb(114, 114, 114)
+}
+.d-flex{
+    display: flex;
+}
+.cap{
+    text-transform: uppercase;
+}
+.d-grid{
+    display: grid;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.w-c{
+    color: $white;
+}
+
+.grey-text{
+    color: rgb(114, 114, 114);
+}
+.pink{
+    background: $pink;
+    color: rgb(255, 86, 114);
+}
+.lightblue{
+    background: $lightblue;
+    color: rgb(0, 255, 234);
+}
+.green{
+    background: $green;
+    color: rgb(0, 255, 13);
+}
+.darkblue{
+    background: $darkblue;
+    color: rgb(0, 140, 255);
+}
+.lightdarkblue{
+    background: $lightdarkblue;
+    color: rgb(67, 155, 255);
+}
+
+.hover-anc{
+    &:hover{
+        a{
+            color: $hover;
+        }
+    }
+}
+.hover{
+    &:hover{
+        color: $hover;
+    }
+}
+.head{
+    font-size: 20px;
+    padding: 15px 0px;
+    font-weight: 600;
+    color: black;
+}
+.w-c1{
+    color: $white;
+    @include font-weight($font-b)
+}
+.text-center{
+    text-align: center;
+}

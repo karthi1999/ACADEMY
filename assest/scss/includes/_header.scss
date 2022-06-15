@@ -1,0 +1,130 @@
+// Header Section
+.header{
+    background: url(../../../assest/img/hero-bg.jpg) no-repeat center;
+    background-size: cover;
+    .header-container{
+        background-color: $bg-header;
+        @include min-width-lg{
+            padding: 20px;
+        }
+        .nav{
+            width: 95%;
+            padding: 20px;
+            margin: auto;
+            align-items: center;
+            justify-content: space-between;
+            @include min-width-lg{
+                width: 80%;
+                padding: 0px;
+            }
+            .menu{
+                width: 100%;
+                @include min-width-lg{
+                    display: none;
+                }
+                .menu-bar{
+                    font-size: 25px;
+                }
+            }
+            .box{
+                display: none;
+            }
+            .logo{
+                width: 100%;
+                @include min-width-lg{width: auto;}
+                a{
+                    font-size: 30px;
+                    @include font-weight($font-m)
+                }
+            }
+            .menu-list{
+                top: 54px;
+                left: -110%;
+                width: 100%;
+                position: absolute;
+                text-align: center;
+                @include min-width-lg{
+                    position: unset; 
+                }
+                ul{
+                    padding: 10px;
+                    flex-direction: column;
+                    background-color: rgba(0, 0, 0, 0.9);
+                    @include min-width-lg{
+                        flex-direction: row;
+                        justify-content: end;
+                        background-color: transparent;
+                    }
+                    li{
+                        padding: 10px;
+                        a{
+                            color: $white;
+                            font-size: 15px;
+                            @include font-weight($font-r)
+                        }
+                        .active{
+                            color: $hover;
+                        }
+                        &:hover{
+                            a{
+                                color: $hover;
+                            }
+                        }
+                    }
+                }   
+            }
+            @include max-width-lg{
+                #click:checked ~ .menu-list{
+                    transition: 0.5s;
+                    left: 0%;
+                }
+            }
+            .empty{
+                width: 100%;
+                @include min-width-lg{
+                    display: none;
+                }
+            }
+        }
+        .banner{
+            width: 95%;
+            margin: auto;
+            color: $white;
+            padding: 150px 0px;
+            align-items: center;
+            justify-content: space-between;
+            @include min-width-lg{
+                width: 80%;
+                padding: 200px 0px;
+            }
+            div:nth-child(odd){
+                font-size: 30px;
+                display: none;
+                &:hover{
+                    color: $hover;
+                }
+                @include min-width-lg{
+                    display: block;
+                }
+            }
+            .banner-content{
+                width: 100%;
+                padding: 20px;
+                line-height: 24px;
+                text-align: center;
+                @include min-width-lg{
+                    width: 80%;
+                }
+                h2{
+                    font-size: 40px;
+                    @include min-width-lg{
+                        font-size: 50px;
+                    }
+                }
+                p{
+                    padding: 28px 0px;
+                }
+            }
+        }
+    }
+}

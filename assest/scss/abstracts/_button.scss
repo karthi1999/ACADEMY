@@ -1,0 +1,22 @@
+.banner-btn{
+    font-size: 14px;
+    padding: 8px 20px;
+    border: 1px solid $hover;
+    border-radius: 20px;
+    background-color: transparent;
+    &:hover{
+        background-color: $hover;
+    }
+    @include font-weight($font-m)
+}
+
+.foot-btn{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    position: absolute;
+    right: 0px;
+    color: $white;
+    background-color: $hover;
+    border: 2px solid $hover;
+}
