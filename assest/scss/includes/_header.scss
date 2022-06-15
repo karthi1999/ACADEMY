@@ -116,7 +116,8 @@
                     width: 80%;
                 }
                 h2{
-                    font-size: 40px;
+                    font-size: 34px;
+                    line-height: 35px;
                     @include min-width-lg{
                         font-size: 50px;
                     }
