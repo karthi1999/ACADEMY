@@ -5,14 +5,17 @@
         .footer-col1{
             padding: 20px;
             background-color: $bg-copyrights;
+            box-shadow: 0 0 0 100vmax $bg-copyrights;
+            clip-path: inset(0 -100vmax);
             flex-direction: column;
             @include min-width-md{
                 flex-direction: row;
                 align-items: center;
             }
             @include min-width-xl{
-                width: 100%;
-                padding: 50px 10%;
+                width: 80%;
+                margin: auto;
+                padding: 50px 0px;
             }
             .foot-text{
                 width: 100%;
@@ -50,6 +53,8 @@
             padding: 20px;
             padding-top: 0px;
             background-color: $bg-footer;
+            box-shadow: 0 0 0 100vmax $bg-footer;
+            clip-path: inset(0 -100vmax);
             grid-template-columns: repeat(1, 1fr);
             @include min-width-md{
                 grid-template-columns: repeat(2, 1fr);
@@ -57,8 +62,9 @@
             }
             @include min-width-xl{
                 grid-template-columns: repeat(4, 1fr);
-                width: 100%;
-                padding: 50px 10%;
+                width: 80%;
+                margin: auto;
+                padding: 50px 0px;
             }
             .head{
                 font-size: 20px;
@@ -118,9 +124,12 @@
         .footer-col3{
             padding: 20px;
             background-color: $bg-copyrights;
+            box-shadow: 0 0 0 100vmax $bg-copyrights;
+            clip-path: inset(0 -100vmax);
             @include min-width-xl{
-                width: 100%;
-                padding: 50px 10%;
+                width: 80%;
+                margin: auto;
+                padding: 50px 0px;
             }
             p{
                 color: $grey;
